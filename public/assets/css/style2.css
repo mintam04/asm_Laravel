@@ -1,0 +1,51 @@
+.comments-section {
+    margin-top: 30px;
+}
+
+.comments-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.comments-table th,
+.comments-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.comments-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+.comments-table td {
+    vertical-align: top;
+}
+
+.article-details {
+    margin-top: 30px;
+}
+
+.article-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.article-title {
+    flex: 1;
+    margin: 0;
+    font-size: 24px;
+}
+
+.article-info {
+    margin: 0 10px;
+    white-space: nowrap;
+}
+
+.article-content {
+    margin-top: 20px;
+    font-size: 16px;
+}
