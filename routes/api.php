@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\API\TinController as APITinController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+Route::get('/tin-theo-loai/{id}', [\App\Http\Controllers\API\TinController::class, 'getTinTheoLoai'])->name('tin-theo-loai');
+Route::get('/tin-chi-tiet/{id}', [\App\Http\Controllers\API\TinController::class, 'getTinChiTiet'])->name('tin-chi-tiet');

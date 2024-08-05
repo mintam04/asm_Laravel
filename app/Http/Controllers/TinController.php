@@ -110,4 +110,13 @@ class TinController extends Controller
 
         return view('searchTin', $data);
     }
+
+    public function trangChuAdmin()
+    {
+
+        return view('admin.welcome');
+    }
+
+
+
 }
